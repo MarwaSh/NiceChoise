@@ -8,7 +8,7 @@ angular.
 
       $routeProvider.
         when('/', {
-          template: '<phone-list></phone-list>'
+          template: 'home page'
         }).
         when('/:topicId', {
           template: '<phone-detail></phone-detail>'
