@@ -8,10 +8,12 @@ angular.
 
       $routeProvider.
         when('/', {
-          template: 'home page'
+          templateUrl: './AirCondition/airCondition.template.html',
+          controller: './AirCondition/airCondition.controller'
         }).
-        when('/:topicId', {
-          template: '<phone-detail></phone-detail>'
+        when('/:airCondition', {
+          templateUrl: './AirCondition/airCondition.template.html',
+          controller: './AirCondition/airCondition.controller'
         }).
         otherwise('/');
     }
