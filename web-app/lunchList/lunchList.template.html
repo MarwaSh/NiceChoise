@@ -3,9 +3,8 @@
 
 <div class="card-columns">
     <div class="card mb-3" ng-repeat="item in $ctrl.lunchList">
-        <a href="#">
-            <img class="card-img-top img-fluid w-100" src="https://unsplash.it/700/450?image=281" alt="">
-        </a>
+        <google-business-card id="item.id"></google-business-card>
+
         <div class="card-body">
             <h6 class="card-title mb-1"><a href="#">{{item.title}}</a></h6>
             <p class="card-text small">Nice shot from the skate park!
