@@ -26,6 +26,7 @@ exports.getDesiredAirConds = function (req, res) {
 
     console.log("sum: " +sumTemps);
     var desiredTemp = sumTemps/votesCount;
+    desiredTemp = Math.round(desiredTemp);
     console.log("temp: " +desiredTemp);
     var desiredMode = coolCount < heatCount ? "heat" : "cool";
     var responseBody = {
