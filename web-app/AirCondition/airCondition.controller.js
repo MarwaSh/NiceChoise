@@ -2,6 +2,7 @@ app.controller("airConditionController", function($scope, $http) {
     var self = this;
     $scope.currTemperature = 25;
     $scope.temperature = 16;
+    $scope.mode = 'cool';
 
     $scope.decreaseTemperature = function () {
         if($scope.temperature > 16) {
@@ -20,7 +21,7 @@ app.controller("airConditionController", function($scope, $http) {
     };
 
     $scope.vote = function () {
-        alert("voting!");
+        alert($scope.mode);
     }
 });
 
