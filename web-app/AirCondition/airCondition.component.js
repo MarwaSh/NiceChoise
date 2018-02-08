@@ -1,6 +1,6 @@
 angular.
 module('niceChoice').
 component('airConditionComponent', {
-    template: './AirCondition/airCondition.template.html',
-    controller: './AirCondition/airCondition.controller'
+    template: 'airCondition.template.html',
+    controller: 'airCondition.controller.js'
 });
