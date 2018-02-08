@@ -13,15 +13,18 @@ function LunchListController($http) {
     this.lunchList = [
         {
             id: 1,
-            title: 'lunch 1'
+            title: 'Bang Bang',
+            img: 'bangbang'
         },
         {
             id: 2,
-            title: 'lunch 2'
+            title: 'BBB',
+            img: 'BBB'
         },
         {
             id: 3,
-            title: 'lunch 3'
+            title: 'wok away',
+            img: 'wokaway'
         }
     ];
 }
