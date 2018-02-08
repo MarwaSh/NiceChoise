@@ -1,7 +1,8 @@
 <div >
     <h2>Air Condition</h2>
     <br/>
-    <h5 class="display-5" >Outdoor temperature is: {{currTemperature}} degrees</h5>
+    <h5 class="display-5" >Outdoor temperature is:  <img src="./Images/temperature.png"></h5> <!--{{currTemperature}} degrees</h5>-->
+
     <br/>
     <br/>
     <h5 class="display-5">Choose the desired temperature</h5>
@@ -24,34 +25,7 @@
     <br/>
     <button class="btn btn-primary" ng-click="vote()" style="margin-left: 50%">Vote</button>
     <footer>
-        <clock></clock>
-        <!--<div>
-        <div class="clock" style="margin:2em;"></div>
-        <div class="message"></div>
+<clock start-time=120 topic="air-condition"></clock>
 
-        <script type="text/javascript">
-            var clock;
-
-            $(document).ready(function() {
-                var clock;
-
-                clock = $('.clock').FlipClock({
-                    clockFace: 'DailyCounter',
-                    autoStart: false,
-                    callbacks: {
-                        stop: function() {
-                            $('.message').html('The clock has stopped!')
-                        }
-                    }
-                });
-
-                clock.setTime(20880);
-                clock.setCountdown(true);
-                clock.start();
-
-            });
-        </script>
-
-        </div>-->
     </footer>
 </div>
