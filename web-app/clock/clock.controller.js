@@ -15,7 +15,7 @@ debugger;
             }
         });
 
-        clock.setTime(220880);
+        clock.setTime(self.startTime);
         clock.setCountdown(true);
         clock.start();
 
