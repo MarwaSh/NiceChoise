@@ -4,7 +4,7 @@
 <div class="card-columns">
     <div class="card mb-3" ng-repeat="item in $ctrl.lunchList">
       <!--  <google-business-card id="item.id"></google-business-card>-->
-        <img class="card-img-top img-fluid w-100" src="Images/{{item.img}}.png" alt="">
+        <img class="card-img-top img-fluid w-100" ng-src="Images/{{item.img}}.png" alt="">
         <div class="card-body">
             <h6 class="card-title mb-1"><a href="#">{{item.title}}</a></h6>
         </div>
