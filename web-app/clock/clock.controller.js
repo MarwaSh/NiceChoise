@@ -1,7 +1,6 @@
 app.controller("clockController", function($scope, $http) {
     var self = this;
 
-debugger;
     $(document).ready(function() {
         var clock;
 
