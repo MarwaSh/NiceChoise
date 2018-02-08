@@ -21,23 +21,20 @@ app.controller("airConditionController", function($scope, $http) {
     };
 
     $scope.vote = function () {
-        alert($scope.mode);
+        var url = '/air-condition/votes';
+        var data = {
+                mode: $scope.mode,
+                temperature: $scope.temperature
+        };
+        var config = {
+            headers : {
+                'Content-Type': 'application/json'
+            }
+        };
+
+        $http.post(url, data, config).then(function (response) {
+            alert(response);
+        });
     }
+
 });
-
-
-
-// angular.module('niceChoice')
-//     .controller('airConditionController', airConditionController);
-// function airConditionController($scope) {
-//     var self = this;
-//     ctrl.temperature = 25;
-//
-//     ctrl.decreaseTemperature = function () {
-//         ctrl.temperature--;
-//     };
-//
-//     ctrl.raiseTemperature = function () {
-//         ctrl.temperature++;
-//     };
-// }
