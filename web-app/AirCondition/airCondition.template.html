@@ -1,13 +1,12 @@
-<div>
+<div >
     <h2>Air Condition</h2>
     <br/>
-    <h5 class="display-5">Outdoor temperature is: {{currTemperature}} degrees</h5>
+    <h5 class="display-5" >Outdoor temperature is: {{currTemperature}} degrees</h5>
     <br/>
     <br/>
     <h5 class="display-5">Choose the desired temperature</h5>
 
-
-    <div class="input-group">
+    <div class="input-group" style="width: 55%">
         <span class="input-group-btn"><button type="button" class="btn btn-success" ng-click="decreaseTemperature()">-</button>
         </span>
         <input id="colorful" class="form-control" type="text" ng-model="temperature" min="16" max="30" style="text-align: center;">
@@ -15,5 +14,13 @@
         </span>
     </div>
     <br/>
-    <button class="btn btn-primary" ng-click="vote()">Vote</button>
+
+    <div>
+        <h5>Choose the air-condition's mode </h5>
+        <input type="radio" name="mode" ng-model="mode" value="cool" checked="true">Cool
+        <br/>
+        <input type="radio" name="mode" ng-model="mode" value="heat">Heat
+    </div>
+    <br/>
+    <button class="btn btn-primary" ng-click="vote()" style="margin-left: 50%">Vote</button>
 </div>
