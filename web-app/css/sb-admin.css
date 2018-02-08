@@ -429,21 +429,42 @@ body.sidenav-toggled .navbar-sidenav-tooltip.show {
   transform: rotate(15deg);
 }
 
+.cardBox {
+  display: block;
+  float: left;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.cardBox img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
 @media (min-width: 576px) {
   .card-columns {
     column-count: 1;
   }
+
 }
 
 @media (min-width: 768px) {
   .card-columns {
     column-count: 2;
   }
+  .cardBox {
+    width: 45%;
+    margin-right: 5%;
+  }
 }
 
 @media (min-width: 1200px) {
   .card-columns {
-    column-count: 2;
+    column-count: 3;
+  }
+  .cardBox {
+    width: 25%;
+    margin-right: 5%;
   }
 }
 
