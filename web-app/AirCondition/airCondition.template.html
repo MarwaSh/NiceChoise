@@ -1,10 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Air Condition</title>
-</head>
-<body>
+<div >
+    <h2>Air Condition</h2>
+    <br/>
+    <h5 class="display-5" >Outdoor temperature is:  <img src="./Images/temperature.png"></h5> <!--{{currTemperature}} degrees</h5>-->
 
-</body>
-</html>
+    <br/>
+    <br/>
+    <h5 class="display-5">Choose the desired temperature</h5>
+
+    <div class="input-group" style="width: 55%">
+        <span class="input-group-btn"><button type="button" class="btn btn-success" ng-click="decreaseTemperature()">-</button>
+        </span>
+        <input id="colorful" class="form-control" type="text" ng-model="temperature" min="16" max="30" style="text-align: center;">
+        <span class="input-group-btn"><button type="button" class="btn btn-danger" ng-click="raiseTemperature()">+</button>
+        </span>
+    </div>
+    <br/>
+
+    <div>
+        <h5>Choose the air-condition's mode </h5>
+        <input type="radio" name="mode" ng-model="mode" value="cool" checked="true">Cool
+        <br/>
+        <input type="radio" name="mode" ng-model="mode" value="heat">Heat
+    </div>
+    <br/>
+    <button class="btn btn-primary" ng-click="vote()" style="margin-left: 50%">Vote</button>
+    <br/>
+    <br/>
+    <footer>
+        <h5>Remaining time to vote:</h5>
+        <clock start-time=120 topic="air-condition"></clock>
+
+    </footer>
+</div>
