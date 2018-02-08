@@ -5,7 +5,23 @@ angular
         controller: LunchListController
     });
 
-function LunchListController() {
+LunchListController.$inject = ['$http'];
+function LunchListController($http) {
+    this.title = 'Lunch Options';
 
-    this.title = 'Lunch List component'
+    //$http.get();
+    this.lunchList = [
+        {
+            id: 1,
+            title: 'food 1'
+        },
+        {
+            id: 2,
+            title: 'food 2'
+        },
+        {
+            id: 3,
+            title: 'food 3'
+        }
+    ];
 }
