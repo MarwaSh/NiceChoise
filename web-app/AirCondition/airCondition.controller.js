@@ -3,6 +3,7 @@ app.controller("airConditionController", function($scope, $http) {
     $scope.currTemperature = 25;
     $scope.temperature = 16;
     $scope.mode = 'cool';
+    $scope.topic = 'air-condition';
 
     $scope.decreaseTemperature = function () {
         if($scope.temperature > 16) {
@@ -33,7 +34,7 @@ app.controller("airConditionController", function($scope, $http) {
         };
 
         $http.post(url, data, config).then(function (response) {
-            alert(response);
+            alert(response.data);
         });
     }
 
