@@ -8,7 +8,7 @@ app.config(function($routeProvider) {
         templateUrl : "AirCondition/airCondition.template.html",
         controller : "airConditionController"
     }).when("/lunch", {
-        templateUrl: "Lunch/lunch.template.html"
+        template: "<lunch-list></lunch-list>"
     }).otherwise({
             redirectTo : "/"
         });
