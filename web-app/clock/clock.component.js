@@ -5,5 +5,6 @@ component('clock', {
     controller: 'clockController',
     bindings: {
         startTime: '=',
+        topic: '='
     },
 });
